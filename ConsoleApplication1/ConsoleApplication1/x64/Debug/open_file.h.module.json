@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\open_file.h.obj",
+            "outputs": [
+                "C:\\Users\\legos\\OneDrive\\Dokumenty\\Git\\ProjektPPK\\ConsoleApplication1\\ConsoleApplication1\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\",
+                "C:\\Users\\legos\\OneDrive\\Dokumenty\\Git\\ProjektPPK\\ConsoleApplication1\\ConsoleApplication1\\x64\\Debug\\open_file.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "open_file.h",
+                    "source-path": "c:\\users\\legos\\onedrive\\dokumenty\\git\\projektppk\\consoleapplication1\\consoleapplication1\\open_file.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}
