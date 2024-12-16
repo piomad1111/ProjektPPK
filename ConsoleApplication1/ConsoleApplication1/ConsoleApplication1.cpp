@@ -76,9 +76,9 @@ void dijkstry(std::map<int, std::map<int, double>> graph, int v) {
     }
     d[v] = 0;// koszt do samego siebie
     while (!Q.empty()) {
-        auto indexFind = std::find(Q.begin(), Q.end(), min(d));
+        auto indexFind = std::find(Q.begin(), Q.end(), min(d, S));
         long int index = std::distance(Q.begin(), indexFind);
-        int wierzcholekU = Q[index]; //pierdoli sie bo out of range -> nie znalazl 13 w Q -> 2 iteracja 13 na pozycji [6] a Q zostało zmniejszone i ma do [5] max
+        int wierzcholekU = Q[index]; 
         S.push_back(wierzcholekU);
         Q.erase(indexFind);      
         for (int wierzcholekW : sasiedzi(graph, wszystkieW(), wierzcholekU)) {
@@ -90,10 +90,30 @@ void dijkstry(std::map<int, std::map<int, double>> graph, int v) {
             }
 
         }
-    }
-    for (auto x:p) {
-        std::cout << x.second << "-";
 
+    }
+    std::cout << "Wierzcholek startowy " << v << ":\n";
+    for (auto [dest, koszt] : d) {
+        if (koszt == DBL_MAX or koszt == 0) {// Nie wyswietlaj dla nieskonczonosci i samej siebie
+            continue;
+        }
+
+        // Rekonstrukcja ścieżki
+        std::vector<int> sciezka;
+        int current = dest;
+        while (current != -1) {
+            sciezka.push_back(current);
+            current = p[current];
+        }
+
+        
+        std::reverse(sciezka.begin(), sciezka.end());// Odwrócenie ścieżki
+
+        std::cout << v;
+        for (int i = 1; i < sciezka.size(); ++i) {
+            std::cout << " -> " << sciezka[i];
+        }
+        std::cout << " : "<< koszt << "\n";
     }
 }
 
@@ -101,49 +121,7 @@ int main()
 {
     open_file("znaki.txt");
     std::map<int, std::map<int, double>> grafek = connections();
-    /*for (int i = 0; i < wierzcholkiPoczatkowe.size(); i++) {
-        std::cout << wierzcholkiPoczatkowe[i]<< kierunki[i] << wierzcholkiKoncowe[i]<<":" << wagi[i] << std::endl;
-    }*/
-    
-    /*for (auto i : wierzcholkiPoczatkowe) {
-         std::cout << std::endl;
-    }*/
-
-
-    //Q1 = wszystkieW();
-    //for (int i : Q1) {
-    //    for (int j : Q1) {
-    //        if(grafek[i][j]!=0)
-    //        std::cout << i<<" : "<<j<<" = "<<grafek[i][j] << std::endl;
-
-    //    }
-    //}
-    //std::cout << "--------" << std::endl;
-    //std::vector<int> sas = {1,5,9,8,6,3};
-    //std::vector<int> sas1;
-
-    //for (int i : sas) {
-    //    std::cout << i << std::endl;
-    //}
-
-
-    
-    //dijkstry(grafek, 9);
-
-    int v = 9;
-    std::vector<int> S;
-    std::vector<int> Q = wszystkieW();
-    std::map<int, double> d; //koszty dojscia
-    std::map<int, int> p; //poprzedniki
-    for (int i : Q) {
-        d[i] = DBL_MAX; //ustawienie koosztu na najwiekszy dla kazdej wartosci
-        p[i] = -1;      //brak poprzednika
-    }
-    d[v] = 0;// koszt do samego siebie
-    auto indexFind = std::find(Q.begin(), Q.end(), 17);
-    int index = std::distance(Q.begin(), indexFind);
-    std::cout << index;
-    dijkstry(grafek, 9);
+    dijkstry(grafek, 1);
 
 }
 
