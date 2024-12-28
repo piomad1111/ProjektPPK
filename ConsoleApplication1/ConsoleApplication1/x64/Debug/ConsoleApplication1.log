@@ -1,3 +1,2 @@
 ﻿  ConsoleApplication1.cpp
-C:\Users\legos\OneDrive\Dokumenty\Git\ProjektPPK\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(80,24): warning C4244: "inicjowanie": konwersja z "__int64" do "long", możliwa utrata danych
-  ConsoleApplication1.vcxproj -> C:\Users\legos\OneDrive\Dokumenty\Git\ProjektPPK\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Users\legos\Documents\Git\ProjektPPK\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe

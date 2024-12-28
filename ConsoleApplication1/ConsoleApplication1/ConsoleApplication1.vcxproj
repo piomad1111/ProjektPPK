@@ -128,12 +128,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="connections.cpp" />
     <ClCompile Include="ConsoleApplication1.cpp" />
+    <ClCompile Include="dijkstry.cpp" />
+    <ClCompile Include="endFile.cpp" />
+    <ClCompile Include="fromFile.cpp" />
+    <ClCompile Include="min.cpp" />
+    <ClCompile Include="openFile.cpp" />
+    <ClCompile Include="sasiedzi.cpp" />
+    <ClCompile Include="vec.cpp" />
+    <ClCompile Include="wszystkieW.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="connections.h" />
+    <ClInclude Include="dijkstry.h" />
+    <ClInclude Include="endFile.h" />
+    <ClInclude Include="fromFile.h" />
     <ClInclude Include="min.h" />
     <ClInclude Include="sasiedzi.h" />
-    <ClInclude Include="wierzcholekSt.h" />
+    <ClInclude Include="vec.h" />
+    <ClInclude Include="wszystkieW.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
