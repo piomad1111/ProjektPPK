@@ -5,6 +5,12 @@ std::vector<std::string> dijkstry(std::map<int, std::map<int, double>> graph, in
     double finalnaWaga = 0;
     std::vector<int> S;
     std::vector<int> Q = wszystkieW(wierzcholkiPoczatkowe, wierzcholkiKoncowe);
+    if (std::distance(Q.begin(), std::find(Q.begin(), Q.end(), v)) == Q.size()) {
+        std::vector<std::string> brak;
+        brak.push_back("wierzcholek startowy " + std::to_string(v));
+        brak.push_back("Brak wierzcholka "+std::to_string(v) + " w grafie");
+        return brak;
+    }
     std::map<int, double> d; //koszty dojscia
     std::map<int, int> p; //poprzedniki
     for (int i : Q) {

@@ -1,3 +1,4 @@
+
 Wierzcholek startowy 4
 4 -> 6 : 21.300000
 4 -> 9 : 14.500000
@@ -8,3 +9,89 @@ Wierzcholek startowy 9
 9 -> 12 -> 4 -> 6 : 52.100000
 9 -> 12 : 8.400000
 9 -> 13 : 18.800000
+wierzcholek startowy 2
+Brak wierzcholka 2 w grafie
+Wierzcholek startowy 4
+4 -> 6 : 21.300000
+4 -> 9 : 14.500000
+4 -> 9 -> 12 : 22.900000
+4 -> 9 -> 13 : 33.300000
+Wierzcholek startowy 9
+9 -> 12 -> 4 : 30.800000
+9 -> 12 -> 4 -> 6 : 52.100000
+9 -> 12 : 8.400000
+9 -> 13 : 18.800000
+wierzcholek startowy 2
+Brak wierzcholka 2 w grafie
+Wierzcholek startowy 4
+4 -> 6 : 21.300000
+4 -> 9 : 14.500000
+4 -> 9 -> 12 : 22.900000
+4 -> 9 -> 13 : 33.300000
+Wierzcholek startowy 9
+9 -> 12 -> 4 : 30.800000
+9 -> 12 -> 4 -> 6 : 52.100000
+9 -> 12 : 8.400000
+9 -> 13 : 18.800000
+wierzcholek startowy 2
+Brak wierzcholka 2 w grafie
+Wierzcholek startowy 4
+4 -> 6 : 21.300000
+4 -> 9 : 14.500000
+4 -> 9 -> 12 : 22.900000
+4 -> 9 -> 13 : 33.300000
+Wierzcholek startowy 9
+9 -> 12 -> 4 : 30.800000
+9 -> 12 -> 4 -> 6 : 52.100000
+9 -> 12 : 8.400000
+9 -> 13 : 18.800000
+wierzcholek startowy 2
+Brak wierzcholka 2 w grafie
+Wierzcholek startowy 4
+4 -> 6 : 21.300000
+4 -> 9 : 14.500000
+4 -> 9 -> 12 : 22.900000
+4 -> 9 -> 13 : 33.300000
+Wierzcholek startowy 9
+9 -> 12 -> 4 : 30.800000
+9 -> 12 -> 4 -> 6 : 52.100000
+9 -> 12 : 8.400000
+9 -> 13 : 18.800000
+wierzcholek startowy 2
+Brak wierzcholka 2 w grafie
+Wierzcholek startowy 4
+4 -> 6 : 21.300000
+4 -> 9 : 14.500000
+4 -> 9 -> 12 : 22.900000
+4 -> 9 -> 13 : 33.300000
+Wierzcholek startowy 9
+9 -> 12 -> 4 : 30.800000
+9 -> 12 -> 4 -> 6 : 52.100000
+9 -> 12 : 8.400000
+9 -> 13 : 18.800000
+wierzcholek startowy 2
+Brak wierzcholka 2 w grafie
+Wierzcholek startowy 4
+4 -> 6 : 21.300000
+4 -> 9 : 14.500000
+4 -> 9 -> 12 : 22.900000
+4 -> 9 -> 13 : 33.300000
+Wierzcholek startowy 9
+9 -> 12 -> 4 : 30.800000
+9 -> 12 -> 4 -> 6 : 52.100000
+9 -> 12 : 8.400000
+9 -> 13 : 18.800000
+wierzcholek startowy 2
+Brak wierzcholka 2 w grafie
+Wierzcholek startowy 4
+4 -> 6 : 21.300000
+4 -> 9 : 14.500000
+4 -> 9 -> 12 : 22.900000
+4 -> 9 -> 13 : 33.300000
+Wierzcholek startowy 9
+9 -> 12 -> 4 : 30.800000
+9 -> 12 -> 4 -> 6 : 52.100000
+9 -> 12 : 8.400000
+9 -> 13 : 18.800000
+wierzcholek startowy 2
+Brak wierzcholka 2 w grafie
