@@ -27,9 +27,9 @@ std::vector<double> wagi;
 std::vector<int> Q1;
 
 /**
-* funkcja odczytuje linie pliku pomijajac biale znaki, wartości wpisuje do odpowiadającego vectora
+* @brief funkcja odczytuje linie pliku pomijajac biale znaki, wartości wpisuje do odpowiadającego vectora.
 *@param file_text nazwa pliku do odczytu
-**/
+*/
 void open_file(std::string file_text) {
 
     std::ifstream stream(file_text);
@@ -54,7 +54,7 @@ int main(int argc, char* argv[])
 {
     std::string inGraf, inWierzcholki, outWynik;
     if (argc < 7 or argc >7) {
-        std::cout << "Progra do znajdowania najkrotszych sciezek między zadanym wierzcholkiem grafu a wszystkimi pozostalymi wierzcholkami tego grafu. Program wykorzystuje algorytm Dijkstry \n -g plik wejsciowy z grafem \n -w plik wejsciowy z wierzcholkami \n -o plik wyjsciowy z wynikami \n";
+        std::cout << "Progra do znajdowania najkrotszych sciezek miedzy zadanym wierzcholkiem grafu a wszystkimi pozostalymi wierzcholkami tego grafu. Program wykorzystuje algorytm Dijkstry.\n ***PROGRAM DZIALA W TRYBIE DOPISYWANIA DO PLIKU***  \n -g plik wejsciowy z grafem \n -w plik wejsciowy z wierzcholkami \n -o plik wyjsciowy z wynikami \n";
     }
     else {
         std::string tablica[7];
